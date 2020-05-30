@@ -8,6 +8,8 @@ import './style.css'
 function FormNovoProduto(props){ 
 
     const [price,setPrice] = useState('');
+    const [produto,setProduto] =useState('');
+    const [quantidade,setQuantidade] = useState('');
     const [id,setId]= useState(0);
     const handelerValues=(event)=>{
         let name  = event.target.name;
@@ -15,6 +17,13 @@ function FormNovoProduto(props){
         switch(name){
             case'price':
               setPrice(Validation.formatValueMoney(value));
+              break;
+            case 'produto':
+                setProduto(value);
+                break;
+              case 'quantidade':
+                  setQuantidade(value)
+                  break;     
         }
     }
 
@@ -54,6 +63,7 @@ function FormNovoProduto(props){
                             type='text'
                             name='price'
                             value={price}
+
                      
                             onChange={(e)=>handelerValues(e)}
                         />    
@@ -61,7 +71,7 @@ function FormNovoProduto(props){
             </div>
             <div className="form_group">
                  <div className="form_single">
-                      <Button onClick ={()=>{ props.dispatch(addProduto({name:'reginaldo',quantidade:'100',price:100,id:id}));setId(id+1) }}>+</Button>
+                      <Button onClick ={()=>{ props.dispatch(addProduto({name:produto,quantidade:quantidade,price:price.replace(/[.,]/,''),id:id}));setId(id+1) ;console.log(price.replace(/[,]/,'.'))}}>+</Button>
                     </div>
             </div>
         </form>
