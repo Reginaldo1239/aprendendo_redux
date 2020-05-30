@@ -1,0 +1,33 @@
+form.novo_produto {
+    width: 100%;
+
+}
+form.novo_produto.flex{
+   justify-content: space-between;
+}
+form.novo_produto .form_group{
+    width: 25%;
+
+}
+form.novo_produto .form_group:last-child{
+   width: 5%;
+   position: relative;
+}
+form.novo_produto .form_group:last-child .form_single {
+   position: absolute;
+   bottom: 0%;
+   left: 0%;
+}
+.form.novo_produto .form_group input{
+       width: 100%;
+}
+form.novo_produto .form_group input{
+   width: 100%;
+   border-radius: 5px;
+   outline: none;
+   border:1px solid#ccc;
+   font-size: 19px;
+}
+.home section.novo_produto form .form_group input:focus{
+  border:1px solid  #99d578;
+}

@@ -1,0 +1,48 @@
+.list_produtos{
+    width: 50%;
+    color:black;
+    margin-top:50px ;
+}
+.line_of_table.flex{
+    justify-content: left;
+    flex-wrap: nowrap;
+}
+
+.list_produtos.line_of_table{
+    width: 100%;
+}
+.line_of_table:first-child .box:first-child{
+    border-top-left-radius: 10px;
+  
+}
+.line_of_table:first-child .box:last-child{
+
+    border-top-right-radius: 10px;
+}
+.line_of_table:last-child .box:first-child{
+    border-bottom-left-radius: 10px;
+  
+}
+.line_of_table:last-child .box:last-child{
+
+    border-bottom-right-radius: 10px;
+}
+
+.line_of_table:first-child span{ 
+   font-weight: 500;
+   font-size: 18px;
+} 
+
+.list_produtos .box{
+    background-color: #ccc;
+    width: 25%;
+    border:2px solid white;
+    padding: 2px;
+}
+.list_produtos .box:last-child{
+   color:red;
+   font-size: 20px; 
+    width: 5%;
+    cursor: pointer;
+    
+}
