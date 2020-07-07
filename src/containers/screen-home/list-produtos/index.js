@@ -28,7 +28,7 @@ store.subscribe(()=>{ console.log(store.getState())});
                 </div>     
                     {produtos.map((lista,i)=>   
                     <div key={lista,i} className="line_of_table flex">
-                      {console.log(lista)}
+                  
                      <div className="box">
                     <span>{lista.produto_name} </span>
                 </div>
@@ -46,7 +46,6 @@ store.subscribe(()=>{ console.log(store.getState())});
                     </div>
                      )
 }
-               
                      
             </div>
             

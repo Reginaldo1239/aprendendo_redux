@@ -31,3 +31,14 @@ form.novo_produto .form_group input{
 .home section.novo_produto form .form_group input:focus{
   border:1px solid  #99d578;
 }
+
+
+@media only screen and (max-width: 600px) {
+   form.novo_produto .form_group:last-child .form_single {
+      position: absolute;
+      bottom: 0%;
+      left: -70%;
+
+   }
+
+ }

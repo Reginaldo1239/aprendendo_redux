@@ -46,3 +46,16 @@
     cursor: pointer;
     
 }
+
+@media only screen and (max-width: 600px) {
+    .list_produtos{
+        width: 100%;
+    
+    }
+    .list_produtos .box{
+        background-color: #ccc;
+        width: 30%;
+        border:2px solid white;
+        padding: 2px;
+    }
+  }
